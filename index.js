@@ -31,4 +31,4 @@ client.on("guildMemberAdd", async (member) => {
     })
 })
 
-Discord.Client.login(process.env.TOKEN)
+client.login(process.env.TOKEN)
