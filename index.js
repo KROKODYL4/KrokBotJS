@@ -1,6 +1,8 @@
 const Discord = require('discord.js')
 require("dotenv").config()
 
+const token = process.env.TOKEN
+
 const generateImage = require('./generateImage')
 
 const welcomeChannelId = "943084256945664010"
@@ -31,4 +33,4 @@ client.on("guildMemberAdd", async (member) => {
     })
 })
 
-client.login(process.env.TOKEN)
+client.login(token)
