@@ -4,7 +4,9 @@
   "description": "KrokBot by Krokodyl4 in JavaScript",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index.js"
+    "dev": "node index.js",
+    "dev:watch": "nodemon index.js",
+    "start": "node index.js"
   },
   "author": "Krokodyl4",
   "license": "ISC",
