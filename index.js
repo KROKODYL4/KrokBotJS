@@ -33,4 +33,4 @@ client.on("guildMemberAdd", async (member) => {
     })
 })
 
-client.login(token.toString())
+client.login(token)
