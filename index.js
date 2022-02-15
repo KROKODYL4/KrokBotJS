@@ -1,6 +1,8 @@
 const Discord = require('discord.js')
 require("dotenv").config()
 
+const prefix = process.env.prefix
+
 const generateImage = require('./generateImage')
 
 const welcomeChannelId = "943084256945664010"
@@ -12,8 +14,20 @@ client.on("ready", () => {
 })
 
 client.on("messageCreate", (msg) => {
-    if (msg.content == "ping"){
+    if (!msg.author.bot) {
+        let username = msg.author.username
+        let discrim = msg.author.discriminator
+
+        console.log(username + " #" + discrim + ":    " +`${msg}`)
+    }
+
+    if (msg.content == prefix + "ping"){
         msg.reply("Pong!")
+    }
+
+    if (msg.content == prefix + "help"){
+        msg.reply("Lista komend:\n"
+                + "!ping - Bot odpowiada \"Pong!\"\n")
     }
 })
 
