@@ -5,13 +5,7 @@ const generateImage = require('./generateImage')
 
 const welcomeChannelId = "943084256945664010"
 
-const client  = new Discord.Client({
-    intents: [
-        "GUILDS",
-        "GUILD_MESSAGES",
-        "GUILD_MEMBERS"
-    ]
-})
+const client  = new Discord.Client({intents: ["GUILDS","GUILD_MESSAGES","GUILD_MEMBERS"]})
 
 client.on("ready", () => {
     console.log(`Logged in as ${client.user.tag}!`)
