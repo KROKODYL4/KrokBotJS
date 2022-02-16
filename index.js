@@ -1,7 +1,7 @@
 const Discord = require('discord.js')
 require("dotenv").config()
 
-const generateImage = require('./generateImage')
+const generateImage = require('./commands/welcome/generateImage')
 
 const welcomeChannelId = "943084256945664010"
 
@@ -16,6 +16,7 @@ let bot = {
 
 client.commands = new Discord.Collection()
 client.events = new Discord.Collection()
+client.slashcommands = new Discord.Collection()
 
 client.loadEvents = (bot, reload) => require("./handlers/events")(bot, reload)
 client.loadCommands = (bot, reload) => require("./handlers/commands")(bot, reload)
