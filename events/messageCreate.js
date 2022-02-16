@@ -13,7 +13,7 @@ module.exports = {
         if (!message.author.bot) {
             let username = message.author.username
             let discrim = message.author.discriminator    
-            console.log(username + " #" + discrim + ":    " +`${msg}`)
+            console.log(username + " #" + discrim + ":    " +`${message}`)
 
             return
         }
