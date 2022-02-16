@@ -7,16 +7,15 @@ module.exports = {
 
         if (!message.guild) return
 
-        if (message.author.bot) return
-
         if (!message.content.startsWith(prefix))
             return
 
-        if (!msg.author.bot) {
+        if (!message.author.bot) {
             let username = msg.author.username
-            let discrim = msg.author.discriminator
-                
+            let discrim = msg.author.discriminator    
             console.log(username + " #" + discrim + ":    " +`${msg}`)
+
+            return
         }
 
         const args = message.content.slice(prefix.length).trim().split(/ +/g)
