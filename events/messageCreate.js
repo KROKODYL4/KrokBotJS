@@ -12,6 +12,13 @@ module.exports = {
         if (!message.content.startsWith(prefix))
             return
 
+        if (!msg.author.bot) {
+            let username = msg.author.username
+            let discrim = msg.author.discriminator
+                
+            console.log(username + " #" + discrim + ":    " +`${msg}`)
+        }
+
         const args = message.content.slice(prefix.length).trim().split(/ +/g)
         const cmdstr = args.shift().toLowerCase()
 
