@@ -12,10 +12,10 @@ module.exports = {
 
         if (!message.author.bot) {
             let username = message.author.username
-            let discrim = message.author.discriminator    
-            console.log(username + " #" + discrim + ":    " +`${message}`)
+            let discrim = message.author.discriminator
 
-            return
+            
+            console.log(username + " #" + discrim + ":    " + message.toString())
         }
 
         const args = message.content.slice(prefix.length).trim().split(/ +/g)
@@ -35,7 +35,7 @@ module.exports = {
         }
 
         try {
-            await command.run({...bot, message, args})
+            await command.run({...bot, message: message, args})
         }
         catch (err) {
             let errMsg = err.toString()
