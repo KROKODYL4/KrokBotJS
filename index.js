@@ -3,8 +3,6 @@ require("dotenv").config()
 
 const generateImage = require('./commands/welcome/generateImage')
 
-const welcomeChannelId = "943084256945664010"
-
 const client  = new Discord.Client({intents: ["GUILDS","GUILD_MESSAGES","GUILD_MEMBERS"]})
 
 
