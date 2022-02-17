@@ -4,7 +4,8 @@
   "description": "Discord bot by Krokodyl4",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js",
+    "start:dev": "nodemon index.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,13 @@
   "bugs": {
     "url": "https://github.com/KROKODYL4/KrokBotJS/issues"
   },
-  "homepage": "https://github.com/KROKODYL4/KrokBotJS#readme"
+  "homepage": "https://github.com/KROKODYL4/KrokBotJS#readme",
+  "dependencies": {
+    "ascii-table": "^0.0.9",
+    "discord.js": "^13.6.0",
+    "dotenv": "^16.0.0",
+    "glob": "^7.2.0",
+    "mongoose": "^6.2.2",
+    "nodemon": "^2.0.15"
+  }
 }
