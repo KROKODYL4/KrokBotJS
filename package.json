@@ -1,19 +1,19 @@
 {
   "name": "krokbot",
   "version": "1.0.0",
-  "description": "KrokBot by Krokodyl4 in JavaScript",
+  "description": "Discord bot by Krokodyl4",
   "main": "index.js",
   "scripts": {
-    "dev": "node index.js",
-    "dev:watch": "nodemon index.js",
-    "start": "node index.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Krokodyl4",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KROKODYL4/KrokBotJS.git"
+  },
+  "author": "",
   "license": "ISC",
-  "dependencies": {
-    "canvas": "^2.9.0",
-    "discord.js": "^13.6.0",
-    "dotenv": "^16.0.0",
-    "nodemon": "^2.0.15"
-  }
+  "bugs": {
+    "url": "https://github.com/KROKODYL4/KrokBotJS/issues"
+  },
+  "homepage": "https://github.com/KROKODYL4/KrokBotJS#readme"
 }
